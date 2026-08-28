@@ -1,0 +1,5 @@
+# build artifacts (published to Release apk-v1.0 instead)
+*.apk
+build/
+.gradle/
+local.properties
