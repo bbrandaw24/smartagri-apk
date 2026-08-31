@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
         s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
-        s.setUserAgentString(s.getUserAgentString() + " SmartAgriApp/1.0");
+        s.setUserAgentString(s.getUserAgentString() + " SmartAgriApp/2.0");
 
         web.setWebViewClient(new WebViewClient());
         web.setWebChromeClient(new WebChromeClient() {

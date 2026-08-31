@@ -31,15 +31,15 @@ jobs:
 
       - name: Rename APK
         run: |
-          cp app/build/outputs/apk/debug/app-debug.apk smartagri-v1.0-debug.apk
-          ls -la smartagri-v1.0-debug.apk
+          cp app/build/outputs/apk/debug/app-debug.apk smartagri-v2.0-debug.apk
+          ls -la smartagri-v2.0-debug.apk
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: apk-v1.0
-          name: 智慧农业 v1.0 (Android)
-          files: smartagri-v1.0-debug.apk
+          tag_name: apk-v2.0
+          name: 智慧农业 v2.0 (Android)
+          files: smartagri-v2.0-debug.apk
           overwrite_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,4 +48,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: smartagri-apk
-          path: smartagri-v1.0-debug.apk
+          path: smartagri-v2.0-debug.apk
